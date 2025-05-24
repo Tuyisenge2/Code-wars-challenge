@@ -12,10 +12,6 @@
 // 1,5,3  --> 5 (1 + 4)
 
 
-
-
-
-
 const sequenceSum = (begin, end, step) => {
   // May the Force be with you
   if (begin > end) {
