@@ -19,45 +19,23 @@
 //   "***********"
 // ]
 
+
 function towerBuilder(nFloors) {
   // build here
-  let r = [];
-  let a = "";
-  let l = nFloors * 2 - 1;
-  //let r=2
-  for (let i = 1; i <= nFloors; i++) {
-    a = "";
-
-    // console.log(i,nFloors)
-    a =
-      " ".repeat(l > 1 ? l - i - 1 : 0) +
-      "*".repeat(2 * i - 1) +
-      " ".repeat(l > 1 ? l - i - 1 : 0);
-    //   console.log( ,'*'.repeat((2*i)-1))
-    console.log(a);
-    r.push(a);
-  }
-  console.log(r);
-
-  return r;
+  let r=[]
+  let a=''
+  for(let i =1 ;i<=nFloors;i++){
+    a=''    
+    a=' '.repeat( nFloors-i) +'*'.repeat((2*i)-1) +' '.repeat(nFloors-i)
+    r.push(a)                                   
+          }
+  return r
 }
 
-// function towerBuilder(nFloors) {
-//   // build here
-//   //let r=[]
-//   let a=''
-//   let l=(nFloors*2)-1
-//   let r=2
-//   for(let i =1 ;i<=nFloors;i++){
-//     a=''
-// //   for(let j =1 ;j<=i;j++){
-// //   //  console.log(i,a ,'is')
-// //    if(j==1){a='*'} else{ a+='*' }
-// //   }
-//    console.log(i)
-//    console.log(// ' '.repeat(l>0? l-i:0) ,
-//                '*'.repeat((2*i)-1))
-//   // if(l>0) l--;
-//   }
-//   return ['*']
-// }
+
+
+
+
+
+
+
