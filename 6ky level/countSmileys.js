@@ -11,15 +11,16 @@
 // Invalid smiley faces: ;( :> :} :]
 
 //return the total number of smiling faces in the array
+//return the total number of smiling faces in the array
 function countSmileys(arr) {
-  if (arr.length < 1) return 0;
-  let reg = /^:.*D$|^:.*\)$|^;.*D$|^;.*\)$ /;
-  if (arr[0] !== undefined) {
-    console.log(arr[0]);
+  if(arr.length <1) return 0;
+  let reg=/^[:;][-~]?[D)]$/
+  if(arr[0]!==undefined){
+    console.log(arr[0])
   }
-  return arr
-    .map((v) => {
-      return reg.test(v) ? v : null;
-    })
-    .filter((i) => i !== null).length;
+  const r= arr.map((v)=>{
+  return reg.test(v) ? v:null  
+  })
+  console.log("wer",r) 
+  return r.filter(i=>i!==null).length;
 }
