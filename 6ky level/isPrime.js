@@ -7,14 +7,17 @@
 // is_prime(2)  /* true  */
 // is_prime(-1) /* false */
 
+
 function isPrime(num) {
   //TODO
-  if (num <= 1) return false;
-  let c = 1;
-  let r = true;
-  while (c <= num / 2) {
-    if (num % c === 0 && c != 1) return false;
-    c++;
-  }
-  return true;
+  if(num <=1) return false
+  let c=1
+  let r=true
+  console.log(Math.sqrt(num))
+   while(c <= Math.sqrt(num)){
+     if( num %c === 0 && c!=1 )  return false
+     c++
+   }  
+  return true
 }
+
